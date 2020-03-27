@@ -1,4 +1,4 @@
-FROM alpine:3.10@sha256:e4355b66995c96b4b468159fc5c7e3540fcef961189ca13fee877798649f531a AS ctags
+FROM alpine:3.10@sha256:de78803598bc4c940fc4591d412bffe488205d5d953f94751c6308deeaaa7eb8 AS ctags
 
 # hadolint ignore=DL3003,DL3018,DL4006
 RUN apk --no-cache add --virtual build-deps curl jansson-dev \
@@ -15,7 +15,7 @@ RUN curl -fsSL -o ctags.tar.gz "https://codeload.github.com/universal-ctags/ctag
     rm -rf /tmp/ctags-$CTAGS_VERSION && \
     apk --no-cache --purge del build-deps
 
-FROM alpine:3.10@sha256:e4355b66995c96b4b468159fc5c7e3540fcef961189ca13fee877798649f531a AS pci-builder
+FROM alpine:3.10@sha256:de78803598bc4c940fc4591d412bffe488205d5d953f94751c6308deeaaa7eb8 AS pci-builder
 
 RUN apk add --no-cache nodejs-current=12.4.0-r0 nodejs-npm=10.19.0-r0
 RUN npm install -g yarn@1.17.3
@@ -26,7 +26,7 @@ COPY lsif-server/src /pci/src
 RUN yarn --cwd /pci run build
 
 # TODO: Make this image use our sourcegraph/alpine:3.10 base image
-FROM alpine:3.10@sha256:e4355b66995c96b4b468159fc5c7e3540fcef961189ca13fee877798649f531a
+FROM alpine:3.10@sha256:de78803598bc4c940fc4591d412bffe488205d5d953f94751c6308deeaaa7eb8
 
 ARG COMMIT_SHA="unknown"
 ARG DATE="unknown"
