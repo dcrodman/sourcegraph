@@ -19,7 +19,7 @@ exports[`CampaignStatus viewerCanAdminister: false campaign errored 1`] = `
             className="mb-2"
           >
             <p
-              className="mb-0 text-monospace"
+              className="mb-0"
             >
               <small>
                 <ErrorMessage
@@ -32,7 +32,7 @@ exports[`CampaignStatus viewerCanAdminister: false campaign errored 1`] = `
             className="mb-2"
           >
             <p
-              className="mb-0 text-monospace"
+              className="mb-0"
             >
               <small>
                 <ErrorMessage
@@ -91,7 +91,7 @@ exports[`CampaignStatus viewerCanAdminister: false campaign processing 1`] = `
             className="mb-2"
           >
             <p
-              className="mb-0 text-monospace"
+              className="mb-0"
             >
               <small>
                 <ErrorMessage
@@ -104,7 +104,7 @@ exports[`CampaignStatus viewerCanAdminister: false campaign processing 1`] = `
             className="mb-2"
           >
             <p
-              className="mb-0 text-monospace"
+              className="mb-0"
             >
               <small>
                 <ErrorMessage
@@ -191,7 +191,7 @@ exports[`CampaignStatus viewerCanAdminister: true campaign errored 1`] = `
             className="mb-2"
           >
             <p
-              className="mb-0 text-monospace"
+              className="mb-0"
             >
               <small>
                 <ErrorMessage
@@ -204,7 +204,7 @@ exports[`CampaignStatus viewerCanAdminister: true campaign errored 1`] = `
             className="mb-2"
           >
             <p
-              className="mb-0 text-monospace"
+              className="mb-0"
             >
               <small>
                 <ErrorMessage
@@ -270,7 +270,7 @@ exports[`CampaignStatus viewerCanAdminister: true campaign processing 1`] = `
             className="mb-2"
           >
             <p
-              className="mb-0 text-monospace"
+              className="mb-0"
             >
               <small>
                 <ErrorMessage
@@ -283,7 +283,7 @@ exports[`CampaignStatus viewerCanAdminister: true campaign processing 1`] = `
             className="mb-2"
           >
             <p
-              className="mb-0 text-monospace"
+              className="mb-0"
             >
               <small>
                 <ErrorMessage
